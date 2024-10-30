@@ -22,4 +22,13 @@
     "vercel": "^32.7.2",
     "wrangler": "^3.21.0"
   }
+  "scripts": {
+  "build": "node src/index.js",
+  "dev:cloudflare": "wrangler dev",
+  "dev:vercel": "vercel dev",
+  "dev:netlify": "netlify dev",
+  "deploy:cloudflare": "wrangler deploy",
+  "deploy:vercel": "vercel --prod",
+  "deploy:netlify": "netlify deploy --build --prod --dir netlify"
+  }
 }
